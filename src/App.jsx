@@ -14,7 +14,7 @@ function App() {
   const getData =(data)=>{
     setValue(data)
   }
-  const items = Array(10000).fill(0).map((_,i)=>(<div>item {i}</div>))
+  const items = Array(10).fill(0).map((_,i)=>(<div>item {i}</div>))
 
   return (
     <>
