@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
-import Child from './components/Child'
-import Stopwatch from './components/Stopwatch'
+import Child from './components/parentchild/Child'
+import Stopwatch from './components/stopwatch/Stopwatch'
 
 function App() {
 
