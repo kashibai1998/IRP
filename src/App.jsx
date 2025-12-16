@@ -3,6 +3,7 @@ import './App.css'
 import Child from './components/parentchild/Child'
 import Stopwatch from './components/stopwatch/Stopwatch'
 import Tasks from './components/tasks/Tasks'
+import Grid from './components/grid/grid'
 
 function App() {
 
@@ -22,6 +23,10 @@ function App() {
         <div>
           <p>Tasks line-through</p>
           <Tasks />
+        </div>
+        <div>
+          <p>Grid </p>
+          <Grid />
         </div>
       </div>
     </>
