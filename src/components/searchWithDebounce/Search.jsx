@@ -28,8 +28,11 @@ export default function Search() {
     console.log("debounceVal",debounceVal)
     if(!debounceVal) return data;
 
+    let searchWords = debounceVal.toLowerCase().split(" ")
     return data.filter((prod,id)=>{
-      return prod.title.toLowerCase().includes(debounceVal.toLowerCase())
+      let title = prod.title.toLowerCase();
+      // return title.toLowerCase().includes(debounceVal.toLowerCase());
+      return searchWords.every((word)=>title.includes(word))
     })
   }, [debounceVal]);
 
